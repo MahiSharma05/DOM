@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> paragraph 1 </p>
+    <p> paragraph 2 </p>
+    <button onclick="addBorder()">Add border</button>
+
+    <script>
+        function addBorder(){
+            var paragraphs = document.getElementsByTagName("p");
+            for( var i = 0; i < paragraphs.length; i++){
+                paragraphs[i].style.border = "2px solid black";
+            }
+        }
+    </script>
+</body>
+</html>

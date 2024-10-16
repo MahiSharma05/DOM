@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P class="hideme">item 1</P>
+    <P class="hideme">item 2</P>
+    <button onclick="hideAll()">hide all</button>
+
+    <script>
+        function hideAll(){
+            var items = document.getElementsByClassName("hideme");
+            for( var i = 0; i < items.length; i++){
+                items[i].style.display = "none";
+            }
+        }
+</body>
+</html>
