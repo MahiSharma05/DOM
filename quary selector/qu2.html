@@ -6,12 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <P id="showme" style="display:none;">Hello, World</P>
-    <button onclick="showElement()">Click Me</button>
+    <h1 id="query">hello world</h1>
+    <h1 class="query">hello world</h1>
+    <button onclick="changequery()"> click me</button>
+
 
     <script>
-        function showElement(){
-            document.getElementById("showme").style.display = "block";
+        function changequery(){
+            document.querySelector("#query").style.color = "red";
         }
     </script>
 </body>
