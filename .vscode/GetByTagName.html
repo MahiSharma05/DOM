@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>change text of all elements</h1>
+    <h2>heading1</h2>
+    <h2>heading1</h2>
+    <button onclick="changeheadings()">chnage heading</button>
+    <script>
+        function changeheadings(){
+            var headings = document.getElementsByTagName("h2");
+            for( var i = 0; i < headings.length; i++){
+                headings[i].textContent = "changed heading!";
+            }
+        }
+    </script>
+    <h1>chnage backgound color of all elements</h1>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <button onclick="changeListColor()">change background color</button>
+    <script>
+        function changeListColor(){
+            var listItems = document.getElementsByTagName("li");
+            for( var i = 0; i < listItems.length; i++){
+                listItems[i].style.backgroundColor = "lightpink";
+            }
+        }
+    </script>
+    <h1>hide all divs</h1>
+    <div>div 1</div>
+    <div>div 2</div>
+    <button onclick="hideDivs()">hide all divs</button>
+
+    <script>
+        function hideDivs(){
+            var divs = document.getElementsByTagName("div");
+            for( var i = 0; i < divs.length; i++){
+                divs[i].style.display = "none";
+            }
+        }
+    </script>
+    <h1>add border to all paragraphs</h1>
+    <p> paragraph 1 </p>
+    <p> paragraph 2 </p>
+    <button onclick="addBorder()">Add border</button>
+
+    <script>
+        function addBorder(){
+            var paragraphs = document.getElementsByTagName("p");
+            for( var i = 0; i < paragraphs.length; i++){
+                paragraphs[i].style.border = "2px solid black";
+            }
+        }
+    </script>
+
+    <h1>change font size of all span elements</h1>
+    <span>hello</span>
+    <span>world</span>
+    <button onclick="changeSpanSize()">change size of span</button>
+    <script>
+        function changeSpanSize(){
+            var spans = document.getElementsByTagName("span");
+            for( var i = 0; i < spans.length; i++){
+              spans[i].style.fontSize = "30px";
+            }
+        }
+    </script>
+</body>
+</html>

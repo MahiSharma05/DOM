@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>change text content</h1> 
+    <P id="greeting">Hello, World</P>
+    <button onclick="changetexts()">Click Me</button>
+
+    <script>
+        function changetexts() {
+            document.getElementById("greeting").textContent = "Hello, Univers";
+        }
+    </script>
+     <h1>change element color and text</h1> 
+    <P id="colortext">Hello, World</P>
+    <button onclick="changecolor()">Click Me for change color</button>
+    <button onclick="changetext()">click me for chnage taxt</button>
+
+    <script>
+        function changetext() {
+            document.getElementById("colortext").textContent = "hello, universe";
+        }
+    </script>
+
+    <script>
+        function changecolor() {
+            document.getElementById("colortext").style.color = "red";
+        }
+    </script>
+
+    <h1>hide an element</h1>
+    <P id="hideme">Hello, World</P>
+    <button onclick="hideElement()">Click Me</button>
+    <script>
+        function hideElement(){
+            document.getElementById("hideme").style.display = "none";
+       }
+</script>
+
+<h1>show an element</h1>
+<P id="showme" style="display:none;">Hello, World</P>
+    <button onclick="showElement()">Click Me</button>
+    <script>
+        function showElement(){
+            document.getElementById("showme").style.display = "block";
+       }
+</script>
+
+<h1>change image source</h1>
+<img id="image" src="https://cdn.britannica.com/83/195983-138-66807699/numbers-tiger-populations.jpg?w=800&h=450&c=crop" alt="tiger">
+    <button onclick="changeimage()">click here to change image</button>
+    <script>
+        function changeimage(){
+            document.getElementById("image").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/800px-Cat03.jpg";
+       }
+</script> 
+</body>
+</html>
